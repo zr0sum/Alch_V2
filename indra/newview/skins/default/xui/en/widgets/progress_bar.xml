@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<progress_bar image_bar="ProgressTrack"
+              image_fill="ProgressBar"
+              color_bar="0.5764 0.6627 0.8352 1" 
+              color_bg="0.3254 0.4000 0.5058 1.0"
+              />

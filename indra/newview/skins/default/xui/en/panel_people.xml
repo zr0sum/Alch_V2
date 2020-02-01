@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- Side tray panel -->
+<panel
+ default_tab_group="1"
+ follows="all"
+ height="449"
+ label="People"
+ layout="topleft"
+ left="0"
+ min_height="350"
+ name="people_panel"
+ top="0"
+ width="333">
+    <string
+     name="no_recent_people"
+     value="No recent people. Looking for people to hang out with? Try [secondlife:///app/search/people Search] or the [secondlife:///app/worldmap World Map]." />
+    <string
+     name="no_filtered_recent_people"
+     value="Didn't find what you're looking for? Try [secondlife:///app/search/people/[SEARCH_TERM] Search]." />
+    <string
+     name="no_one_near"
+     value="No one nearby. Looking for people to hang out with? Try [secondlife:///app/search/people Search] or the [secondlife:///app/worldmap World Map]." />
+    <string
+     name="no_one_filtered_near"
+     value="Didn't find what you're looking for? Try [secondlife:///app/search/people/[SEARCH_TERM] Search]." />
+    <string
+     name="no_friends_online"
+     value="No friends online" />
+    <string
+     name="no_friends"
+     value="No friends" />
+    <string
+     name="no_friends_msg">
+         Find friends using [secondlife:///app/search/people Search] or right-click on a Resident to add them as a friend.
+Looking for people to hang out with? Try the [secondlife:///app/worldmap World Map].
+    </string>
+    <string
+     name="no_filtered_friends_msg">
+         Didn't find what you're looking for? Try [secondlife:///app/search/people/[SEARCH_TERM] Search].
+    </string>
+     <!--
+     *WORKAROUND: for group_list.no_items_msg & group_list.no_filtered_items_msg attributes.
+     They are not defined as translatable in VLT. See EXT-5931
+     -->
+    <string
+     name="no_filtered_groups_msg"
+     value="Didn't find what you're looking for? Try [secondlife:///app/search/groups/[SEARCH_TERM] Search]." />
+    <string
+     name="no_groups_msg"
+     value="Looking for Groups to join? Try [secondlife:///app/search/groups Search]." />
+	<string
+	 name="MiniMapToolTipMsg"
+	 value="[REGION](Double-click to open Map, shift-drag to pan)"/>
+	<string
+	 name="AltMiniMapToolTipMsg"
+	 value="[REGION](Double-click to teleport, shift-drag to pan)"/>
+	<string
+	 name="GroupCountWithInfo"
+	 value="You belong to [COUNT] groups, and can join [REMAINING] more.  [secondlife:/// Want more?]"/>
+    <tab_container
+     bottom="-5"
+     follows="all"
+     layout="topleft"
+     left="2"
+     name="tabs"
+     tab_group="1"
+     tab_min_width="60"
+     tab_position="top"
+     top="0"
+     halign="center"
+     right="-1">
+        <panel
+         filename="panel_people_nearby.xml" 
+         background_opaque="true"
+         background_visible="true"
+         bg_alpha_color="DkGray"
+         bg_opaque_color="DkGray"
+         bottom="-1"
+         follows="all"
+         label="NEARBY"
+         layout="topleft"
+         left="2"
+         help_topic="people_nearby_tab"
+         name="nearby_panel"
+         right="-1"
+         top="0"/>
+        <panel
+         filename="panel_people_friends.xml"
+         background_opaque="true"
+         background_visible="true"
+         bg_alpha_color="DkGray"
+         bg_opaque_color="DkGray"
+         bottom="-1"
+         follows="all"
+         label="FRIENDS"
+         layout="topleft"
+         left="0"
+         help_topic="people_friends_tab"
+         name="friends_panel"
+         right="-1"
+         top="0"/>
+        <panel 
+         filename="panel_people_groups.xml"
+         background_opaque="true"
+         background_visible="true"
+         bg_alpha_color="DkGray"
+         bg_opaque_color="DkGray"
+         bottom="-1"
+         follows="all"
+         label="GROUPS"
+         layout="topleft"
+         left="0"
+         help_topic="people_groups_tab"
+         name="groups_panel"
+         right="-1"
+         top="0"/>
+        <panel
+         filename="panel_people_recent.xml"
+         background_opaque="true"
+         background_visible="true"
+         bg_alpha_color="DkGray"
+         bg_opaque_color="DkGray"
+         follows="all"
+         height="383"
+         label="RECENT"
+         layout="topleft"
+         left="0"
+         help_topic="people_recent_tab"
+         name="recent_panel"
+         right="-1"
+         top="0"/>
+      <panel
+        filename="panel_block_list_sidetray.xml"
+        class="panel_block_list_sidetray"
+             keep_one_selected="false"
+        background_opaque="true"
+        background_visible="true"
+        bg_alpha_color="DkGray"
+        bg_opaque_color="DkGray"
+        height="383"
+        name="blocked_panel"
+        follows="all"
+        label="BLOCKED"
+        layout="topleft"
+        left="0"
+        top="0"
+        right="-1" />
+    </tab_container>
+</panel>
