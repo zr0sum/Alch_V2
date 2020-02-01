@@ -1,6 +1,3 @@
-![Alchemy Logo](https://www.alchemyviewer.org/images/banner.png)
-
-[![pipeline status](https://git.alchemyviewer.org/alchemy/alchemy/badges/master/pipeline.svg)](https://git.alchemyviewer.org/alchemy/alchemy/commits/master)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/20301/badge.svg)](https://scan.coverity.com/projects/alch_v2)
 
 ## About
